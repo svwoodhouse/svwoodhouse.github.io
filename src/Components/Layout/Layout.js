@@ -6,7 +6,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div className="layoutStyle">
-       <AboutMe/>
+        <AboutMe/>
       </div>
     )
   }

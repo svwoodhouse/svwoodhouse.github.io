@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,8 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  height: 100vh;
+  background-image: linear-gradient(to right, red , yellow);  height: 100vh;
 }
 
 code {
@@ -20,4 +22,51 @@ code {
 
 .blue {
   color: #00ffff;
+}
+
+.terminalStyle {
+  padding-top: 55px;
+  text-align: left;
+  vertical-align: left;
+  border-left: 5px;
+  background-color: #300a24;
+  margin-left: 200px;
+  margin-right: 200px;
+  min-height: 80vh;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: large;
+  color: white;
+}
+
+.terminalBorderStyle{
+  background-color: rgb(59, 58, 58);
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+ /* blinking cursor */
+ #cursor {
+  color: transparent;
+  background: white;
+  line-height: 12px;
+  -webkit-animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite;
+  width: 7px;
+  height: 15px;
+}
+
+@-webkit-keyframes blink {
+  0% {background: #222}
+  50% {background: white}
+  100% {background: #222}
+}
+
+@keyframes blink {
+  0% {background: #222}
+  50% {background: white}
+  100% {background: #222}
+}
+
+.terminalName {
+  color:rgb(136, 255, 112);
 }

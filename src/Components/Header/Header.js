@@ -1,18 +1,18 @@
 import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
+import '../Header/Header.css';
 
 const header = () => {
   return (
-  <Navbar bg="dark" expand="md" variant="dark" fixed="top">
-    <Navbar.Brand href="#home">Sydnee Woodhouse</Navbar.Brand>
+  <Navbar expand="md" variant="dark" fixed="top" className="NavBarStyle">
+    <Navbar.Brand href="#home">sydnee.woodhouse@ubuntu~</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#project">Projects</Nav.Link>
-        <Nav.Link href="#resume">Resume</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
-        <Nav.Link href="src\assets\Woodhouse, Sydnee.pdf" download>Resume</Nav.Link>
+        <Nav.Link className ="linkStyle" href="/aboutme">About Me</Nav.Link>
+        <Nav.Link className ="linkStyle" href="/projects">Projects</Nav.Link>
+        <Nav.Link className ="linkStyle" href="/contact">Contact</Nav.Link>
+        <Nav.Link className ="linkStyle" href="src\assets\Woodhouse, Sydnee.pdf" download>Resume</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

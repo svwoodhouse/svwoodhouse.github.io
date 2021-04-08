@@ -5,7 +5,7 @@ import {Navbar, Container} from 'react-bootstrap';
 const footer = () => {
   return (
       <div className="fixed-bottom">
-          <Navbar>
+          <Navbar variant="dark" className="FooterNavBarStyle">
               <Container>
                   <Navbar.Brand>Designed By Sydnee Woodhouse</Navbar.Brand>
                   <div className="icon-div">
