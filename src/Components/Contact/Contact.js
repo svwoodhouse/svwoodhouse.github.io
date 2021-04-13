@@ -24,7 +24,7 @@ const contact = () => {
         paddingStyle : {
             'paddingLeft': '15px'
         }
-    }
+    } 
 
     return (
         <div className="terminalStyle">
