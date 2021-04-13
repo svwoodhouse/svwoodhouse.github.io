@@ -1,6 +1,9 @@
 import React from 'react';
 import {Card, CardGroup, Button} from 'react-bootstrap'
 import '../Projects/Projects.css';
+import tictactoe from '../../assets/tictactoe.png';
+import overwatch from '../../assets/overwatch.png';
+import diamond from '../../assets/diamond.jpg'; 
 
 const projects = () => {
     const style = {
@@ -28,9 +31,13 @@ const projects = () => {
             'paddingLeft': '15px',
             'paddingRight': '15px',
             'paddingBottom': '15px',
+            'color': 'black',
         },
         cardStyle : {
             'padding': '15px',
+        },
+        cardImg : {
+          'height': '300px'
         }
     }
     return (
@@ -40,90 +47,47 @@ const projects = () => {
             <p className="terminalName">sydnee.woodhouse@ubuntu<span style={style.whiteFont}>:</span><span style={style.blueFont}>~</span><span style={style.whiteFont}>$ Projects</span><span id="cursor">_</span></p>
             <CardGroup style={style.cardPadding}>
                 <Card style={{ width: '18rem', margin:'15px' }}>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Img style={style.cardImg} variant="top" src={tictactoe} />
                     <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
+                        <Card.Title>Tic Tac Toe with Minimax Algorithm</Card.Title>
+                        <Card.Text style={{color: 'black'}}>
+                        This Tic Tac Toe application is created in Java using the NetBeans IDE and Java Swing Framework. 
+                        With this application, you can play against a local friend, against AI or a friend across the globe!
                         </Card.Text>
-                        <Button variant="primary">Github</Button>
+                        <Button variant="primary" onClick={() => window.open('https://github.com/svwoodhouse/TicTacToe/')}>Github</Button>
                     </Card.Body>
                     <Card.Footer>
-                        <small className="text-muted">Implemented using: Python</small>
+                        <small className="text-muted">Implemented using: Java</small>
                     </Card.Footer>
                 </Card>
-  <Card style={{ width: '18rem', margin:'15px' }}> 
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem', margin:'15px' }}>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardGroup>
-<CardGroup style={style.cardPadding}>
+                <Card style={{ width: '18rem', margin:'15px' }}> 
+                  <Card.Img  style={style.cardImg} variant="top" src={overwatch} />
+                  <Card.Body>
+                    <Card.Title>Overwatch Statistics Comparison Application</Card.Title>
+                    <Card.Text>
+                      This application extracts data of the players of the game Overwatch and compares the statistics between them.
+                    </Card.Text>
+                    <Button variant="primary" onClick={() => window.open('https://github.com/svwoodhouse/OverwatchMetricsApplication')}>Github</Button>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Implemented using: Python</small>
+                  </Card.Footer>
+                </Card>
                 <Card style={{ width: '18rem', margin:'15px' }}>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.
-                        </Card.Text>
-                        <Button variant="primary">Github</Button>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Implemented using: Python</small>
-                    </Card.Footer>
+                  <Card.Img  style={style.cardImg} variant="top" src={diamond}  />
+                  <Card.Body>
+                    <Card.Title>Project Diamond</Card.Title>
+                    <Card.Text>
+                    Project Diamond is essentially a loop that never ends in which each component sends data or a message to another component. 
+                    The component receives the data, converts it to another format, then sends it to the next component.
+                    </Card.Text>
+                    <Button variant="primary" onClick={() => window.open('https://github.com/svwoodhouse/Project-Diamond')}>Github</Button>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Implemented using: Python</small>
+                  </Card.Footer>
                 </Card>
-  <Card style={{ width: '18rem', margin:'15px' }}>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.{' '}
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-  <Card style={{ width: '18rem', margin:'15px' }}>
-    <Card.Img variant="top" src="holder.js/100px160" />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </Card.Text>
-    </Card.Body>
-    <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-    </Card.Footer>
-  </Card>
-</CardGroup>
+              </CardGroup>
         </div>
     )
 

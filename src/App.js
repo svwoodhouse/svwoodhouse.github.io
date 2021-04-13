@@ -5,6 +5,8 @@ import Footer from './Components/Footer/Footer';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Home from './Components/Home/Home';
+
 import { React, Component} from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
@@ -15,7 +17,7 @@ class App extends Component  {
       <div className="App">
         <Header/>
         <Switch>
-            <Route path="/home" component={AboutMe}/>
+            <Route path="/home" component={Home}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/aboutme" component={AboutMe}/>
             <Route path="/contact" component={Contact}/>

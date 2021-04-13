@@ -5,7 +5,7 @@ import '../Header/Header.css';
 const header = () => {
   return (
   <Navbar expand="md" variant="dark" fixed="top" className="NavBarStyle">
-    <Navbar.Brand href="#home">sydnee.woodhouse@ubuntu~</Navbar.Brand>
+    <Navbar.Brand href="/home">sydnee.woodhouse@ubuntu~</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
