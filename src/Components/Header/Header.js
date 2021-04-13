@@ -7,7 +7,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 const header = () => {
   return (
   <Navbar expand="md" variant="dark" fixed="top" className="NavBarStyle">
-  <LinkContainer to="/">
+  <LinkContainer to={process.env.PUBLIC_URL + '/'}>
     <Navbar.Brand>sydnee.woodhouse@ubuntu~</Navbar.Brand>
   </LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
